@@ -19,6 +19,7 @@ app.use('/posts', postRoutes);
 
 // route for checking API is running or not 
 app.get('/', (req, res) => {
+  res.setHeader("Acess-Control-Allow-Credentials","true");
   res.send('API is running')
 })
 // MongoDB connection URL
